@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/img/javacoffeelogowhite.png" alt="Caffeine Compiler">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="NuestroMenu.html">Nuestro Menu</a></li>
+                <li><a href="TrabajaConNosotros.html">Trabaja con nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <button id="cart-button">Carrito de Compras (<span id="cart-count">0</span>)</button>
+            <div id="cart-items" class="hidden">
+                <h3>Carrito de Compras</h3>
+                <ul id="cart-list"></ul>
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button id="checkout-button"><a href="CheckOut.html">Pagar</a></button>
+
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="assets/img/Minimalist Coffee Linkedin Banner.png" alt="Coffee">
+        </section>
+        <div class="content-wrapper">
+            <section class="products">
+                <div class="product-list">
+                    <div class="product">
+                        <img src="assets/img/Café Scegliere.jpg" alt="Café Scegliere">
+                        <h2><a href="">Café Scegliere</a></h2>
+                        <p>$9.490,00</p>
+                        <button class="add-to-cart" data-name="Café Scegliere" data-price="9490">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/Cafe Barista.jpg" alt="Café Barista">
+                        <h2><a href="">Café Barista</a></h2>
+                        <p>$8.900,00</p>
+                        <button class="add-to-cart" data-name="Café Barista" data-price="8900">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/Productos_cafe_packs_MINKA_frente.jpg" alt="Café Minka">
+                        <h2><a href="">Café Minka</a></h2>
+                        <p>$11.800,00</p>
+                        <button class="add-to-cart" data-name="Café Minka" data-price="11800">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/Productos_cafe_packs_COLOMBIA_frente.jpg" alt="Café Colombia">
+                        <h2><a href="">Café Colombia</a></h2>
+                        <p>$12.000,00</p>
+                        <button class="add-to-cart" data-name="Café Colombia" data-price="12000">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/Productos_cafe_packs_BRASIL_frente.jpg" alt="Café Brasil">
+                        <h2><a href="">Café Brasil</a></h2>
+                        <p>$21.000,00</p>
+                        <button class="add-to-cart" data-name="Café Brasil" data-price="21000">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/Productos_cafe_packs_descaf_frente.jpg" alt="Café Descafeinado">
+                        <h2><a href="">Café Descafeinado</a></h2>
+                        <p>$9.000,00</p>
+                        <p class="sale">$11.000,00</p>
+                        <button class="add-to-cart" data-name="Café Descafeinado" data-price="9000">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/capsulas_taza_scegliere.jpg" alt="Capsulas Scegliere">
+                        <h2><a href="">Capsulas Scegliere</a></h2>
+                        <p>$16.000,00</p>
+                        <button class="add-to-cart" data-name="Capsulas Scegliere" data-price="16000">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/capsulas_taza_barista.jpg" alt="Café Barista">
+                        <h2><a href="">Capsula Barista</a></h2>
+                        <p>$25,000,00</p>
+                        <button class="add-to-cart" data-name="Capsula Barista" data-price="25000">Agregar al Carrito</button>
+                    </div>
+                    <div class="product">
+                        <img src="assets/img/capsulas_taza_colombia.jpg" alt="Capsulas Colombia">
+                        <h2><a href="">Capsulas Colombia</a></h2>
+                        <p>$18.000,00</p>
+                        <button class="add-to-cart" data-name="Capsulas Colombia" data-price="18000">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </section>
+            <aside>
+                <div class="top-rated">
+                    <h3>Productos Mejor Valorados</h3>
+                    <ul>
+                        <li><a href="">Café Scegliere - $9.490,00</a></li>
+                        <li><a href="">Capsula Barista - $25.000,00</a></li>
+                        <li><a href="">Capsula Colombia - $18.000,00</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+    <footer>
+        <div class="store-info">
+            <h3>Tiendas</h3>
+            <p>Necochea 229, Salta Capital, A4400, ARG</p>
+            <p>Av. San Martín 866, Salta -San Lorenzo, A4400, ARG </p>
+        </div>
+        <div class="newsletter">
+            <h3>Noticias tan frescas como nuestro café</h3>
+            <input type="email" placeholder="Tu direccion email">
+            <button>Subscribite</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="Contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
+
+
+
