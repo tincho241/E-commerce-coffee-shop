@@ -150,7 +150,6 @@ footer nav ul li a {
     color: white;
 }
 
-/* Media Query para diseño responsivo */
 @media (max-width: 768px) {
     header {
         flex-direction: column;
