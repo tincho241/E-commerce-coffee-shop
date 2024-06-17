@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Pago</title>
+    <link rel="stylesheet" href="assets/css/pagar.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Pago</h2>
+        <form action="/procesar_pago" method="post">
+            <div class="form-group">
+                <label for="nombre">Nombre en la Tarjeta:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="numero">Número de Tarjeta:</label>
+                <input type="text" id="numero" name="numero" required>
+            </div>
+            <div class="form-group">
+                <label for="expiracion">Fecha de Expiración (MM/AA):</label>
+                <input type="text" id="expiracion" name="expiracion" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <div class="form-group">
+                <button type="submit"><a href="index.html">Pagar</a></button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
